@@ -18,6 +18,7 @@ jobs:
           name: install dependencies  
           command: |
             pwd
+            source ~/.helloCircleCiInCloud9/bin/activate
             cd demos/flask-sklearn-student-starter/
             make install
             
@@ -25,6 +26,7 @@ jobs:
           name: run lint  
           command: |
             pwd
+            source ~/.helloCircleCiInCloud9/bin/activate
             cd demos/flask-sklearn-student-starter/
             make lint
 
