@@ -9,6 +9,12 @@ jobs:
     steps:
       - checkout
       - run:
+          name: setup python venv  
+          command: |
+            python3 -m venv ~/.helloCircleCiInCloud9
+            source ~/.helloCircleCiInCloud9/bin/activate
+            
+      - run:
           name: install dependencies  
           command: |
             pwd
